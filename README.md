@@ -2,17 +2,15 @@
 
 ## Programprotokol af Star Wars API
 
-1. DOMContentLoaded Event Lytter:
+1. DOMContentLoaded Event Lytter: <br/>
+__Formål:__ Vent på, at det initiale HTML-dokument er fuldstændigt indlæst og parset. <br/>
+__Handling:__
+Lyt efter DOMContentLoaded-begivenheden. <br/>
+Når begivenheden udløses, kaldes lazyLoadCharacters-funktionen. <br/>
 <br/>
-*Formål: Vent på, at det initiale HTML-dokument er fuldstændigt indlæst og parset.
-<br/>
-Handling: Lyt efter DOMContentLoaded-begivenheden.
-<br/>
-Når begivenheden udløses, kaldes lazyLoadCharacters-funktionen.
-<br/>
-3. Lazy Load Characters Funktion:
-Formål: Implementer doven indlæsning af Star Wars-karakterdata.
-Handling:
+3. Lazy Load Characters Funktion: <br/>
+__Formål:__ Implementer doven indlæsning af Star Wars-karakterdata.
+__Handling:__
 Definer et array af karakter-ID'er.
 Hent reference til output-div-elementet.
 Initialiser en Intersection Observer for at opdage synligheden af pladsholdere.
